@@ -24,16 +24,8 @@ import { ContactMainComponent } from './educal/contact/contact-main/contact-main
 
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
-  { path: 'home', component: HomeComponent },
-  {
-    path: 'home-two',
-    component: HomeTwoComponent
-  },
-  {
-    path: 'home-three',
-    component: HomeThreeComponent
-  },
+  { path: '', component: HomeTwoComponent },
+  { path: 'home', component: HomeTwoComponent },
   {
     path: 'courses',
     component: CoursesPageComponent
