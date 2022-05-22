@@ -1,4 +1,6 @@
 import { Guid } from "guid-typescript";
+import { CategoryCourse } from "./categoryCourse";
+import { CourseMentor } from "./courseMentor";
 
 export interface Course{
   courseId: Guid;
@@ -8,5 +10,8 @@ export interface Course{
   insertDate: Date;
   updateDate: Date;
   updateUserId: Guid;
+
+  categoryCourses: CategoryCourse[];
+  courseMentors: CourseMentor[];
 
 }

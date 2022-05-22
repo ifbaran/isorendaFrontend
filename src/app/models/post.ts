@@ -1,4 +1,7 @@
 import { Guid } from "guid-typescript";
+import { CommentPost } from "./commentPost";
+import { Like } from "./like";
+import { Mentor } from "./mentor";
 
 export interface Post{
     postId: Guid;
@@ -10,7 +13,7 @@ export interface Post{
     updateDate: Date;
     updateUserId: Guid;
 
-    // Mentor: Mentor;
-    // CommentPosts: CommentPost[];
-    // Likes: Like[];
+    mentor: Mentor;
+    commentPosts: CommentPost[];
+    likes: Like[];
 }

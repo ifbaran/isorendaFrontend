@@ -1,5 +1,6 @@
 import { Guid } from "guid-typescript";
 import { Client } from "./client";
+import { Mentor } from "./mentor";
 
 export interface FileAuthenticate {
   fileAuthenticateId: Guid;
@@ -9,4 +10,5 @@ export interface FileAuthenticate {
 
   client:Client;
   file: File;
+  mentor: Mentor;
 }

@@ -1,4 +1,5 @@
 import { Guid } from "guid-typescript";
+import { DiscountCourseMentor } from "./discountCourseMentor";
 
 export interface Discount {
   discountId: Guid;
@@ -9,4 +10,6 @@ export interface Discount {
   updateDate: Date;
   updateUserId: Guid;
   status: boolean;
+
+  discountCourseMentors: DiscountCourseMentor[];
 }
