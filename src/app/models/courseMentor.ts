@@ -1,6 +1,9 @@
 import { Guid } from "guid-typescript";
 import { BasketCourseMentor } from "./basketCourseMentor";
 import { Course } from "./course";
+import { CourseMentorClient } from "./courseMentorClient";
+import { DiscountCourseMentor } from "./discountCourseMentor";
+import { Mentor } from "./mentor";
 
 export interface CourseMentor {
   courseMentorId: Guid;
@@ -12,5 +15,8 @@ export interface CourseMentor {
   updateUserId: Guid;
 
   course: Course;
+  mentor: Mentor;
   basketCourseMentors: BasketCourseMentor[];
+  courseMentorClients: CourseMentorClient[];
+  discountCourseMentors: DiscountCourseMentor[];
 }

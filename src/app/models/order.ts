@@ -1,4 +1,5 @@
 import { Guid } from "guid-typescript";
+import { Basket } from "./basket";
 
 export interface Order{
     OrderId: Guid;
@@ -10,7 +11,5 @@ export interface Order{
     UpdateDate: Date;
     UpdateUserId: Guid;
 
-    //---------------\\
-
-    //Basket: Basket;
+    basket: Basket;
 }

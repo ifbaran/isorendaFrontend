@@ -1,4 +1,6 @@
 import { Guid } from "guid-typescript";
+import { Role } from "./role";
+import { User } from "./user";
 
 export interface RoleUser{
     roleUserId: Guid;
@@ -8,6 +10,6 @@ export interface RoleUser{
     updateDate: Date;
     updateUserId: Guid;
 
-    //roles: Role[];
-    //user: User[];
+    roles: Role[];
+    user: User[];
 }

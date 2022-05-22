@@ -1,4 +1,6 @@
 import { Guid } from "guid-typescript";
+import { AuthenticateRole } from "./authenticateRole";
+import { RoleUser } from "./roleUser";
 
 export interface Role {
     roleId: Guid;
@@ -8,6 +10,6 @@ export interface Role {
     updateDate: Date;
     updateUserId: Guid;
 
-    // AuthenticateRoles: AuthenticateRole[];
-    // RoleUsers: RoleUser[];
+    authenticateRoles: AuthenticateRole[];
+    roleUsers: RoleUser[];
 }

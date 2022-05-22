@@ -1,4 +1,5 @@
 import { Guid } from "guid-typescript";
+import { Mentor } from "./mentor";
 
 export interface MentorEducationInformation{
     mentorEducationInformationId: Guid;
@@ -9,7 +10,5 @@ export interface MentorEducationInformation{
     updateDate: Date;
     updateUserId: Guid;
 
-    //------------\\
-
-    // Mentor: Mentor;
+    mentor: Mentor;
 }

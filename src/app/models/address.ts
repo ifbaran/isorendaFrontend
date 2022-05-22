@@ -1,4 +1,7 @@
 import { Guid } from "guid-typescript";
+import { City } from "./city";
+import { Town } from "./town";
+import { User } from "./user";
 
 export interface Address{
   addressId: Guid;
@@ -10,4 +13,8 @@ export interface Address{
   insertDate: Date;
   updateDate: Date;
   updateUserId: Guid;
+
+  city: City;
+  town: Town;
+  user: User;
 }

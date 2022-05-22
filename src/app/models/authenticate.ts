@@ -1,4 +1,5 @@
 import { Guid } from "guid-typescript";
+import { AuthenticateRole } from "./authenticateRole";
 
 export interface Authenticate{
   authenticateId: Guid;
@@ -8,4 +9,6 @@ export interface Authenticate{
   updateDate: Date;
   updateUserId: Guid;
   status: boolean;
+
+  authenticateRoles: AuthenticateRole[];
 }

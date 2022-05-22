@@ -1,4 +1,6 @@
 import { Guid } from "guid-typescript";
+import { ParentClient } from "./parentClient";
+import { User } from "./user";
 
 export interface Parent {
     parentId: Guid;
@@ -12,6 +14,6 @@ export interface Parent {
     realBirthDate: Date;
     birthDateOnIdentity: Date;
 
-    // user : User;
-    // parentClients : ParentClients[];
+    user : User;
+    parentClients : ParentClient[];
 }

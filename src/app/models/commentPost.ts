@@ -1,4 +1,5 @@
 import { Guid } from "guid-typescript";
+import { Post } from "./post";
 
 export interface CommentPost{
   commentPostId: Guid;
@@ -6,4 +7,5 @@ export interface CommentPost{
   postId: Guid;
 
   comment: Comment;
+  post: Post;
 }

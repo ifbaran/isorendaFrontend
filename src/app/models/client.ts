@@ -1,6 +1,11 @@
 import { Guid } from "guid-typescript";
 import { Authenticate } from "./authenticate";
 import { Basket } from "./basket";
+import { ClientEducationInformation } from "./clientEducationInformation";
+import { CourseMentorClient } from "./courseMentorClient";
+import { FileAuthenticate } from "./fileAuthenticate";
+import { ParentClient } from "./parentClient";
+import { User } from "./user";
 
 export interface Client{
   clientId: Guid;
@@ -14,5 +19,10 @@ export interface Client{
   realBirthDate: Date;
   birthDateOnIdentity: Date;
 
+  user: User;
   baskets: Basket[];
+  clientEducationInformations: ClientEducationInformation[];
+  courseMentorClients: CourseMentorClient[];
+  fileAuthenticates: FileAuthenticate[];
+  parentClients: ParentClient[];
 }
